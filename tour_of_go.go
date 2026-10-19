@@ -113,4 +113,10 @@ func main() {
 		sum += sum
 	}
 	fmt.Println(sum)
+
+	sum1 := 1
+	for sum1 < 1000 {
+		sum1 += sum1
+	}
+	fmt.Println(sum1)
 }
