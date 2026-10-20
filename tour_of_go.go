@@ -201,4 +201,8 @@ func main() {
 	default:
 		fmt.Println("Good evening")
 	}
+
+	for i := 0; i < 10; i++ {
+		defer fmt.Println(i)
+	}
 }
