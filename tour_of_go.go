@@ -66,6 +66,17 @@ func sqrt(x float64) string {
 	return fmt.Sprint(math.Sqrt(x))
 }
 
+func Sqrt(x float64) float64 {
+	z := 1.0
+
+	for i := 0; i < 10; i++ {
+		z -= (z*z - x) / (2 * z)
+		fmt.Printf("Iteration %d: %v\n", i+1, z)
+	}
+
+	return z
+}
+
 // var c, python, java bool
 // var i, j int = 1, 2
 
@@ -150,4 +161,6 @@ func main() {
 		pow(3, 2, 10),
 		pow(3, 3, 20),
 	)
+
+	fmt.Println("Final result:", Sqrt(2)
 }
