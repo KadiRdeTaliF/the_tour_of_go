@@ -162,5 +162,5 @@ func main() {
 		pow(3, 3, 20),
 	)
 
-	fmt.Println("Final result:", Sqrt(2)
+	fmt.Println("Final result:", Sqrt(2))
 }
