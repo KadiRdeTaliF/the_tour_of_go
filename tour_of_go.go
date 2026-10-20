@@ -82,6 +82,8 @@ func Sqrt(x float64) float64 {
 // var i, j int = 1, 2
 
 func main() {
+	defer fmt.Println("world")
+
 	fmt.Println("Welcome to the playground!")
 
 	fmt.Println("The time is", time.Now())
