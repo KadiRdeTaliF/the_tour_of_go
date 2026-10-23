@@ -133,8 +133,8 @@ func main() {
 	var z uint = uint(f)
 	fmt.Println(x, y, z)
 
-	v := 42 // change me!
-	fmt.Printf("v is of type %T\n", v)
+	// v := 42 // change me!
+	// fmt.Printf("v is of type %T\n", v)
 
 	const World = "世界"
 	fmt.Println("Hello", World)
@@ -226,4 +226,8 @@ func main() {
 	fmt.Println(j) //  видим новое значение j
 
 	fmt.Println(Vertex{1, 2})
+
+	v := Vertex{1, 2}
+	v.X = 4
+	fmt.Println(v.X)
 }
