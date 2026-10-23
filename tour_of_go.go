@@ -19,6 +19,13 @@ type Vertex struct {
 
 // Структура — это набор полей.
 
+var (
+	v12 = Vertex{1, 2}  // has type Vertex
+	v22 = Vertex{X: 1}  // Y:0 is implicit
+	v32 = Vertex{}      // X:0 and Y:0
+	p2  = &Vertex{1, 2} // has type *Vertex
+)
+
 // func swap(x, y string) (string, string) {
 // 	return y, x
 // }
@@ -232,4 +239,5 @@ func main() {
 	p1.X = 1e9
 	fmt.Println(v.X) //Доступ к полям структуры осуществляется с помощью точки.
 
+	fmt.Println(v12, p2, v22, v32)
 }
