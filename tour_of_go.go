@@ -228,6 +228,8 @@ func main() {
 	fmt.Println(Vertex{1, 2})
 
 	v := Vertex{1, 2}
-	v.X = 4
-	fmt.Println(v.X)
+	p1 := &v
+	p1.X = 1e9
+	fmt.Println(v.X) //Доступ к полям структуры осуществляется с помощью точки.
+
 }
