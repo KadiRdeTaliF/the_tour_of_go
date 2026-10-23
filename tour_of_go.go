@@ -12,6 +12,13 @@ func add(x, y int) int {
 	return x + y
 }
 
+type Vertex struct {
+	X int
+	Y int
+}
+
+// Структура — это набор полей.
+
 // func swap(x, y string) (string, string) {
 // 	return y, x
 // }
@@ -217,4 +224,6 @@ func main() {
 	p = &j         // указатель на j
 	*p = *p / 37   // делим j через указатель
 	fmt.Println(j) //  видим новое значение j
+
+	fmt.Println(Vertex{1, 2})
 }
